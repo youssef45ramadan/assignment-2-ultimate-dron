@@ -1,0 +1,965 @@
+* {
+  box-sizing: border-box;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.text-capitalize {
+  text-transform: capitalize;
+}
+.header {
+  background-color: #f5f3ff;
+  border-bottom: 1px solid #ddd6fe;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 99999999;
+}
+.continar {
+  width: 80%;
+  margin: 0 auto;
+}
+.header .nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .left-nav {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.header .left-nav .imges {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  padding: 5px;
+  background-color: #a47bff;
+}
+.header .left-nav span {
+  font-size: 30px;
+  font-weight: bold;
+  color: #292929;
+  letter-spacing: 1px;
+}
+.header .right-nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  padding-top: 5px;
+}
+.header .right-nav ul a {
+  text-decoration: none;
+  display: inline-block;
+  color: #292929;
+  font-size: 20px;
+  padding: 10px 0;
+  border-bottom: 2px solid transparent;
+  text-transform: capitalize;
+}
+.header .right-nav a.hover {
+  color: #9810fa;
+  border-bottom: 2px solid #9810fa;
+}
+.header .right-nav ul a:hover {
+  border-bottom: 2px solid #9810fa;
+}
+.section {
+  padding: 10% 0;
+}
+.section .product-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.section .product-section .left-images {
+  padding: 25px;
+  border: 2px solid #e0e3e8;
+  border-radius: 30px;
+  position: relative;
+}
+.section .product-section .left-images .left-section .imegs {
+  width: 500px;
+  height: 500px;
+  border-radius: 25px;
+  display: block;
+}
+.section .product-section .left-images .tego {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  background-color: #914cff;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: 16px;
+}
+.section .product-section .right-information {
+  padding-left: 50px;
+  width: 50%;
+}
+.section .product-section .right-information .product-test .product-span span {
+  padding: 8px 15px;
+  background-color: #a47bff;
+  margin-left: 5px;
+  color: white;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: bold;
+}
+.section .product-section .right-information .product-test h1 {
+  padding-top: 20px;
+  font-size: 60px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #333;
+}
+.section .product-section .right-information .product-test h1 span {
+  color: #914cff;
+}
+.section .product-section .right-information .product-test p {
+  font-size: 20px;
+  letter-spacing: 1px;
+  line-height: 1.6;
+  color: #222;
+}
+.section .product-section .right-information .pricing .Pricing-span {
+  padding-top: 20px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+.section .product-section .right-information .pricing .Pricing-span .span-1 {
+  font-weight: bold;
+  font-size: 40px;
+  padding-right: 15px;
+  color: #292929;
+}
+.section .product-section .right-information .pricing .Pricing-span .span-2 {
+  padding-right: 15px;
+  text-decoration: line-through;
+  font-size: 25px;
+}
+.section .product-section .right-information .pricing .Pricing-span .span-3 {
+  background-color: #ffe1e5;
+  color: red;
+  padding: 8px 15px;
+  border-radius: 30px;
+  font-weight: bold;
+}
+.section .product-section .right-information .pricing p {
+  padding-top: 10px;
+  color: #333;
+  font-size: 20px;
+}
+.section .product-section .right-information .quantity .Quantity-button {
+  padding-top: 25px;
+  width: 100%;
+}
+.section
+  .product-section
+  .right-information
+  .quantity
+  .Quantity-button
+  .button-1 {
+  width: 100%;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  padding: 20px;
+  background-color: #914cff;
+  border-radius: 40px;
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+.section
+  .product-section
+  .right-information
+  .quantity
+  .Quantity-button
+  .button-1:hover {
+  transform: scale(1.05);
+}
+.section
+  .product-section
+  .right-information
+  .quantity
+  .Quantity-button
+  .button-1
+  img {
+  width: 20px;
+  height: 20px;
+}
+.section
+  .product-section
+  .right-information
+  .quantity
+  .Quantity-button
+  .button-2 {
+  margin-top: 20px;
+  width: 100%;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  padding: 20px;
+  background-color: #914cff;
+  border-radius: 40px;
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+.section
+  .product-section
+  .right-information
+  .quantity
+  .Quantity-button
+  .button-2:hover {
+  transform: scale(1.05);
+}
+.section
+  .product-section
+  .right-information
+  .quantity
+  .Quantity-button
+  .button-2
+  img {
+  width: 20px;
+  height: 20px;
+}
+.explore {
+  background-color: #f5f3ff;
+  padding-top: 50px;
+}
+.explore .explore-hedding h2 {
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  color: #292929;
+  padding-bottom: 8px;
+}
+.explore .explore-hedding h2 span {
+  color: #914cff;
+}
+.explore .explore-hedding p {
+  text-align: center;
+  font-size: 20px;
+  color: #222;
+}
+.explore .card-explore .explore-skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.explore .explore-skills .personal-one {
+  width: 32%;
+  background-color: #fff;
+  border: 1px solid #e9e2ff;
+  padding: 30px;
+  border-radius: 25px;
+  margin-top: 30px;
+  transition: 0.5s ease;
+}
+.explore .explore-skills .personal-one:hover {
+  transform: translateY(20px);
+}
+.explore .explore-skills .personal-one .icon-img .images {
+  width: 50px;
+  height: 50px;
+  color: #9810fa;
+  border-radius: 15px;
+  padding: 10px;
+}
+.explore .explore-skills .personal-one .icon-img .images-1 {
+  background-color: #e9e2ff;
+}
+.explore .explore-skills .personal-one .icon-img .images-2 {
+  background-color: #cffafe;
+}
+.explore .explore-skills .personal-one .icon-img .images-3 {
+  background-color: #d1fae5;
+}
+.explore .explore-skills .personal-one .icon-img .images-4 {
+  background-color: #ffedd5;
+}
+.explore .explore-skills .personal-one .icon-img .images-5 {
+  background-color: #e0f2fe;
+}
+.explore .explore-skills .personal-one .icon-img .images-6 {
+  background-color: #ffe4e6;
+}
+.explore .explore-skills .personal-one .explore-card .cards .p-1 {
+  color: #8e51ff;
+  font-size: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.explore .explore-skills .personal-one .explore-card .cards .p-2 {
+  color: #0092b8;
+  font-size: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.explore .explore-skills .personal-one .explore-card .cards .p-3 {
+  color: #009966;
+  font-size: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.explore .explore-skills .personal-one .explore-card .cards .p-4 {
+  color: #ea580c;
+  font-size: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.explore .explore-skills .personal-one .explore-card .cards .p-5 {
+  color: #0284c7;
+  font-size: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.explore .explore-skills .personal-one .explore-card .cards .p-6 {
+  color: #e11d48;
+  font-size: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.explore .explore-skills .personal-one .explore-card .cards h3 {
+  font-size: 25px;
+  font-weight: bold;
+  color: #222;
+}
+.explore .explore-skills .personal-one .explore-card .cards .information-p {
+  padding-top: 15px;
+  font-size: 21px;
+  line-height: 1.6;
+  color: #333;
+  margin: 0;
+  padding-bottom: 20px;
+}
+.explore .explore-skills .personal-one .explore-card .cards .hr {
+  border-bottom: 2px solid #e9e2ff;
+}
+.explore .explore-skills .personal-one .icon-span {
+  padding-top: 20px;
+}
+.explore .explore-skills .personal-one .icon-span .span-1 {
+  display: inline-block;
+  color: #6550a5;
+  font-weight: 800;
+  font-size: 18px;
+  padding-bottom: 5px;
+}
+.explore .explore-skills .personal-one .icon-span .span-1-1 {
+  font-size: 14px;
+  display: inline-block;
+  color: #777;
+}
+.explore .footer-session {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.explore .footer-session .footer-card {
+  background-color: #861cff;
+  border-radius: 22px;
+  color: white;
+  padding: 35px 38px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+.explore .footer-session .footer-card p {
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.explore .footer-session .footer-card h3 {
+  font-size: 30px;
+  font-weight: bold;
+}
+.explore .footer-session .footer-card .incor {
+  background-color: white;
+  padding: 17px 27px;
+  border-radius: 35px;
+}
+.explore .footer-session .footer-card .incor a {
+  color: #861cff;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.content-section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #fff;
+}
+.content-section .explore-hedding h2 {
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  color: #292929;
+  padding-bottom: 8px;
+}
+.content-section .explore-hedding h2 span {
+  color: #914cff;
+}
+.content-section .explore-hedding p {
+  text-align: center;
+  font-size: 20px;
+  color: #222;
+  padding-bottom: 50px;
+}
+.content-section
+  .reviews-section
+  .reviews-card
+  .reviews-item
+  .icon
+  .icon-images
+  img,
+.content-section
+  .reviews-section
+  .individual-reviews
+  .individual-card1
+  .top-card
+  .center-card
+  .content
+  img {
+  width: 20px;
+}
+.content-section
+  .reviews-section
+  .individual-reviews
+  .individual-card1
+  .top-card
+  .center-card
+  img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+.content-section .reviews-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 25px;
+  position: relative;
+}
+.content-section .reviews-section .reviews-card {
+  width: 50%;
+  border: 1px solid #dce0e8;
+  border-radius: 15px;
+  padding: 25px;
+  position: sticky;
+  top: 80px;
+}
+.content-section .reviews-section .reviews-card .icon {
+  text-align: center;
+  padding-bottom: 15px;
+}
+.content-section .reviews-section .reviews-card .icon > div:first-child {
+  font-size: 50px;
+  font-weight: bold;
+  font-weight: bold;
+  color: #292929;
+  padding-bottom: 5px;
+}
+.content-section .reviews-section .reviews-card .icon p {
+  font-size: 15px;
+  color: #666;
+}
+.content-section .reviews-section .reviews-card .section-content {
+  padding-bottom: 15px;
+  border-bottom: 1px solid #dce0e8;
+}
+.content-section .reviews-section .reviews-card .section-content .span-icon {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding-bottom: 10px;
+}
+.content-section
+  .reviews-section
+  .reviews-card
+  .section-content
+  .span-icon
+  span {
+  font-size: 15px;
+  color: #555;
+  width: 30px;
+}
+.content-section
+  .reviews-section
+  .reviews-card
+  .section-content
+  .span-icon
+  .center-div {
+  flex: 1;
+  height: 10px;
+  background-color: #e5e7eb;
+  border-radius: 10px;
+}
+.content-section
+  .reviews-section
+  .reviews-card
+  .section-content
+  .span-icon
+  .center-div
+  div {
+  height: 100%;
+  background-color: #fbbf24;
+  border-radius: 10px;
+}
+.content-section
+  .reviews-section
+  .reviews-card
+  .section-content
+  .span-icon
+  .color-1 {
+  width: 78%;
+}
+.content-section
+  .reviews-section
+  .reviews-card
+  .section-content
+  .span-icon
+  .color-2 {
+  width: 15%;
+}
+.content-section
+  .reviews-section
+  .reviews-card
+  .section-content
+  .span-icon
+  .color-3 {
+  width: 5%;
+}
+.content-section
+  .reviews-section
+  .reviews-card
+  .section-content
+  .span-icon
+  .color-4 {
+  width: 1.5%;
+}
+.content-section
+  .reviews-section
+  .reviews-card
+  .section-content
+  .span-icon
+  .color-5 {
+  width: 0.5%;
+}
+.content-section .reviews-section .reviews-card .main-section {
+  padding-top: 15px;
+}
+.content-section .reviews-section .reviews-card .main-section .section-main {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+.content-section .reviews-section .reviews-card .main-section .p-Paragraph {
+  font-size: 25px;
+  font-weight: bold;
+  color: #292929;
+}
+.content-section .reviews-section .reviews-card .main-section .Paragraph-p {
+  font-size: 15;
+  color: #666;
+  padding-bottom: 15px;
+}
+.content-section .reviews-section .individual-reviews {
+  width: 100%;
+}
+.content-section .reviews-section .individual-reviews .individual-card1 {
+  border: 1px solid #dce0e8;
+  border-radius: 12px;
+  padding: 18px;
+  margin-bottom: 15px;
+}
+.content-section .reviews-section .individual-reviews .top-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 10px;
+}
+.content-section .reviews-section .individual-reviews .center-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+.content-section .reviews-section .individual-reviews .center-card .content h4 {
+  font-size: 20px;
+  padding-bottom: 10px;
+  color: #222;
+}
+.content-section
+  .reviews-section
+  .individual-reviews
+  .center-card
+  .content
+  > p {
+  font-size: 15px;
+  color: #666;
+  margin: 0 0 4px;
+}
+.content-section
+  .reviews-section
+  .individual-reviews
+  .center-card
+  .content
+  .img-icon {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+.content-section
+  .reviews-section
+  .individual-reviews
+  .center-card
+  .content
+  .img-icon
+  img {
+  width: 11px;
+  height: 11px;
+}
+.content-section
+  .reviews-section
+  .individual-reviews
+  .center-card
+  .content
+  .img-icon
+  span {
+  font-size: 15px;
+  color: #666;
+  margin-left: 5px;
+}
+.content-section .reviews-section .individual-reviews .changing .span-color {
+  background-color: #f3e8ff;
+  color: #7e22ce;
+  border-radius: 15px;
+  padding: 4px 8px;
+  font-size: 13px;
+}
+.content-section .reviews-section .individual-reviews .changing .span-changing {
+  font-size: 14px;
+  color: #666;
+  margin: 4px;
+}
+.content-section .reviews-section .individual-reviews .changing {
+  text-align: right;
+}
+.content-section .reviews-section .individual-reviews .bottom-card {
+  font-size: 19px;
+  line-height: 1.7;
+  color: #444;
+}
+.content-section .reviews-section .individual-reviews .button {
+  text-align: center;
+  padding-top: 10px;
+}
+.content-section .reviews-section .individual-reviews .button .button-icon {
+  border: none;
+  border-radius: 25px;
+  padding: 15px 25px;
+  background-color: #914cff;
+  color: white;
+  font-size: 17px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.content-section
+  .reviews-section
+  .individual-reviews
+  .button
+  .button-icon:hover {
+  background-color: white;
+  color: #914cff;
+  border: 1px solid #914cff;
+}
+.complete {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #f5f3ff;
+}
+.complete .complete-section h2 {
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  color: #292929;
+  padding-bottom: 8px;
+}
+.complete .complete-section h2 span {
+  color: #914cff;
+}
+.complete .complete-section p {
+  text-align: center;
+  font-size: 20px;
+  color: #222;
+  padding-bottom: 50px;
+}
+
+.complete .complete-content .div {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 25px;
+}
+.complete .session-content {
+  width: 25%;
+  background-color: white;
+  border: 2px solid #e0e3e8;
+  padding: 15px 0 25px;
+  border-radius: 30px;
+}
+.complete .complete-content .session-content .complete-imge {
+  position: relative;
+  padding: 10px 15px;
+}
+.complete .complete-content .session-content .complete-imge img {
+  display: block;
+  width: 100%;
+  padding: 30px;
+  border-radius: 50px;
+  transition: 0.5s ease;
+}
+.complete .complete-content .session-content .complete-imge img:hover {
+  transform: scale(1.05);
+}
+.complete .complete-content .session-content .complete-imge .imge-span {
+  position: absolute;
+  top: 60px;
+  left: 70px;
+  padding: 5px 5px;
+  border-radius: 25px;
+  background-color: #14b8a6;
+  color: white;
+  font-size: 15px;
+}
+.complete .complete-content .session-content .complete-imge .imge-span2 {
+  position: absolute;
+  top: 60px;
+  left: 70px;
+  padding: 5px 5px;
+  border-radius: 25px;
+  background-color: #00c853;
+  color: white;
+  font-size: 15px;
+}
+.complete .complete-content .session-content .complete-imge .imge-span3 {
+  position: absolute;
+  top: 60px;
+  left: 70px;
+  padding: 5px 5px;
+  border-radius: 25px;
+  background-color: #06b6d4;
+  color: white;
+  font-size: 15px;
+}
+.complete .complete-content .session-content .complete-imge .imge-span4 {
+  position: absolute;
+  top: 60px;
+  left: 70px;
+  padding: 5px 5px;
+  border-radius: 25px;
+  background-color: #ff6d00;
+  color: white;
+  font-size: 15px;
+}
+.complete .complete-content .session-content .session-coplete {
+  padding: 15px 15px 0;
+}
+.complete .complete-content .session-content .session-coplete .complete-h3 {
+  font-size: 23px;
+  font-weight: bold;
+  color: #292929;
+}
+.complete .complete-content .session-content .session-coplete .complete-p {
+  font-size: 17px;
+  line-height: 1.5;
+  color: #292929;
+}
+.complete .complete-content .session-content .session-coplete .complete-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.complete
+  .complete-content
+  .session-content
+  .session-coplete
+  .complete-div
+  .complete-span {
+  font-size: 25px;
+  font-weight: bold;
+  color: #292929;
+}
+.complete
+  .complete-content
+  .session-content
+  .session-coplete
+  .complete-div
+  .complete-button {
+  border: none;
+  border-radius: 25px;
+  background-color: #914cff;
+  color: white;
+  font-size: 17px;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 13px 18px;
+}
+.complete .final-fotter {
+  padding-top: 50px;
+  text-align: center;
+}
+.complete .final-fotter button {
+  border: 2px solid #914cff;
+  border-radius: 35px;
+  padding: 18px 35px;
+  background-color: transparent;
+  color: #8000ff;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.complete .final-fotter button:hover {
+  background-color: #914cff;
+  color: white;
+}
+footer {
+  background-color: #111827;
+  color: white;
+  padding: 50px 0 30px;
+}
+footer .footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 50px;
+  border-bottom: 1px solid #263244;
+}
+footer .main-footer {
+  width: 25%;
+}
+footer .main-footer .page-footer {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+footer .main-footer .page-footer .imges {
+  padding: 10px;
+  background-color: #862cff;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .main-footer .page-footer .imges img {
+  width: 28px;
+}
+footer .main-footer .page-footer .footer-span {
+  font-size: 35px;
+  font-weight: bold;
+}
+footer .main-footer .footer-p {
+  font-size: 19px;
+  line-height: 1.6;
+  color: #f3f4f6;
+}
+footer .main-footer .footer-section {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+footer .main-footer .footer-section span {
+  padding: 10px;
+  background-color: #1f2937;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+footer .main-footer .footer-section span img {
+  width: 20px;
+}
+footer .main-footer .footer-section span:hover {
+  background-color: #374151;
+}
+footer .productsr,
+footer .support,
+footer .company {
+  flex: 1;
+}
+footer .footer-content h3 {
+  font-size: 30px;
+  font-weight: bold;
+  padding-top: 10px;
+  color: white;
+}
+footer .footer-content ul {
+  list-style: none;
+  padding: 0;
+}
+footer .footer-content ul li {
+  font-size: 20px;
+  color: #9caec5;
+  padding-bottom: 20px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+footer .footer-content ul li:hover {
+  color: white;
+}
+footer .footer-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  padding-top: 40px;
+}
+footer .footer-info .footer-p {
+  font-size: 20px;
+  color: white;
+}
+footer .footer-info .footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+footer .footer-info .footer-logo .footer-img {
+  width: 50px;
+  padding:10px;
+  background-color: white;
+  border-radius: 10px;
+}
+footer .footer-info .footer-logo .footer-img img {
+  width:100%;
+}
